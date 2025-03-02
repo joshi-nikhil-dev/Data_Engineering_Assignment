@@ -1,0 +1,18 @@
+clean-targets:
+- target
+- dbt_packages
+config-version: 2
+model-paths:
+- models
+models:
+  aus_company_pipeline:
+    marts:
+      materialized: table
+    staging:
+      materialized: table
+name: aus_company_pipeline
+profile: default
+target-path: target
+test-paths:
+- tests
+version: 1.0.0

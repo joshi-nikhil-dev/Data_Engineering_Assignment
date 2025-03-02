@@ -1,0 +1,15 @@
+17:30:52  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021280366C60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021280367DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021280366FC0>]}
+17:30:52  Running with dbt=1.7.0
+17:30:52  running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\joshi\\.dbt', 'log_path': 'C:\\Users\\joshi\\OneDrive\\Desktop\\hit2\\dbt_project\\logs', 'version_check': 'True', 'debug': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+17:30:52  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0c72fdbc-8ef7-4c2c-ace2-b674230f8613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021281A23D70>]}
+17:30:52  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0c72fdbc-8ef7-4c2c-ace2-b674230f8613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212FFE1CAA0>]}
+17:30:52  Registered adapter: postgres=1.7.0
+17:30:52  checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+17:30:52  Unable to do partial parsing because saved manifest not found. Starting full parse.
+17:30:52  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0c72fdbc-8ef7-4c2c-ace2-b674230f8613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021281A49700>]}
+17:30:53  Encountered an error:
+Compilation Error
+  Model 'model.aus_company_pipeline.stg_abr' (models\staging\stg_abr.sql) depends on a source named 'raw.abr_data' which was not found
+17:30:53  Command `dbt run` failed at 23:00:53.741439 after 1.28 seconds
+17:30:53  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212FFF12600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021281AED280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021281B71FA0>]}
+17:30:53  Flushing usage events

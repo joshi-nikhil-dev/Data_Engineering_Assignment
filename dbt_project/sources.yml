@@ -1,0 +1,14 @@
+sources:
+- database: aus_company_db
+  name: raw
+  schema: australian_companies
+  tables:
+  - external:
+      format: csv
+      location: C:\Users\joshi\hit2\common_crawl\2024-42
+    name: common_crawl
+  - external:
+      format: csv
+      location: C:\Users\joshi\hit2\abr
+    name: abr
+version: 2

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: aus_company_db
+    schema: australian_companies
+    tables:
+      - name: abr_data
+      - name: websites
+      - name: website_abr_mapping

@@ -1,0 +1,943 @@
+[0m23:10:15.409816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503A706A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503D8DAC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503D8DA9B0>]}
+
+
+============================== 23:10:15.414817 | f3042cdf-a10b-496b-84e5-c4e1296fe52e ==============================
+[0m23:10:15.414817 [info ] [MainThread]: Running with dbt=1.7.0
+[0m23:10:15.415812 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\joshi\\OneDrive\\Desktop\\hit2\\dbt_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\joshi\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run-operation test_source --args {"source_name": "raw", "table_name": "abr_data"}', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:10:15.663360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f3042cdf-a10b-496b-84e5-c4e1296fe52e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503C320790>]}
+[0m23:10:15.772588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f3042cdf-a10b-496b-84e5-c4e1296fe52e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503D957BB0>]}
+[0m23:10:15.775592 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m23:10:15.785067 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m23:10:15.787067 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:10:15.788074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f3042cdf-a10b-496b-84e5-c4e1296fe52e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503DB66E00>]}
+[0m23:10:17.054860 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.aus_company_pipeline.stg_websites' (models\staging\stg_websites.sql) depends on a source named 'raw.websites' which was not found
+[0m23:10:17.056862 [debug] [MainThread]: Command `dbt run-operation` failed at 23:10:17.056862 after 1.71 seconds
+[0m23:10:17.057860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503A706A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503DF629B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001503DF30CD0>]}
+[0m23:10:17.058863 [debug] [MainThread]: Flushing usage events
+[0m23:12:15.956002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025658D77820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565BF4AB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565BF4A8F0>]}
+
+
+============================== 23:12:15.960004 | 9a25c624-3aa9-4b53-bb0e-e8c5887d56c9 ==============================
+[0m23:12:15.960004 [info ] [MainThread]: Running with dbt=1.7.0
+[0m23:12:15.961004 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\joshi\\OneDrive\\Desktop\\hit2\\dbt_project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\joshi\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run-operation test_source --args {"source_name": "raw", "table_name": "abr_data"}', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:12:16.214014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9a25c624-3aa9-4b53-bb0e-e8c5887d56c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565969C4F0>]}
+[0m23:12:16.326259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9a25c624-3aa9-4b53-bb0e-e8c5887d56c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565BF00130>]}
+[0m23:12:16.328260 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m23:12:16.338535 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m23:12:16.340542 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:12:16.341535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9a25c624-3aa9-4b53-bb0e-e8c5887d56c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565C1D5780>]}
+[0m23:12:17.622277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9a25c624-3aa9-4b53-bb0e-e8c5887d56c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565C6F00D0>]}
+[0m23:12:17.635724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9a25c624-3aa9-4b53-bb0e-e8c5887d56c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565C6F3C70>]}
+[0m23:12:17.636728 [info ] [MainThread]: Found 3 models, 1 test, 3 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m23:12:17.637728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a25c624-3aa9-4b53-bb0e-e8c5887d56c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565C1A69B0>]}
+[0m23:12:17.639728 [debug] [MainThread]: Acquiring new postgres connection 'macro_test_source'
+[0m23:12:17.640729 [debug] [MainThread]: Using postgres connection "macro_test_source"
+[0m23:12:17.640729 [debug] [MainThread]: On macro_test_source: BEGIN
+[0m23:12:17.641728 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:12:17.700830 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:12:17.701839 [debug] [MainThread]: On macro_test_source: COMMIT
+[0m23:12:17.702852 [debug] [MainThread]: Using postgres connection "macro_test_source"
+[0m23:12:17.703846 [debug] [MainThread]: On macro_test_source: COMMIT
+[0m23:12:17.704841 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:12:17.705837 [debug] [MainThread]: On macro_test_source: Close
+[0m23:12:17.706835 [error] [MainThread]: Encountered an error while running operation: Runtime Error
+  dbt could not find a macro with the name "test_source" in any package
+[0m23:12:17.753566 [debug] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\joshi\AppData\Local\anaconda3\envs\spark_env\lib\site-packages\dbt\task\run_operation.py", line 58, in run
+    self._run_unsafe(package_name, macro_name)
+  File "C:\Users\joshi\AppData\Local\anaconda3\envs\spark_env\lib\site-packages\dbt\task\run_operation.py", line 43, in _run_unsafe
+    res = adapter.execute_macro(
+  File "C:\Users\joshi\AppData\Local\anaconda3\envs\spark_env\lib\site-packages\dbt\adapters\base\impl.py", line 1078, in execute_macro
+    raise DbtRuntimeError(
+dbt.exceptions.DbtRuntimeError: Runtime Error
+  dbt could not find a macro with the name "test_source" in any package
+
+[0m23:12:17.755572 [error] [MainThread]: Encountered an error:
+Internal Error
+  dbt could not find a macro with the name 'test_source' in any package
+[0m23:12:17.756925 [debug] [MainThread]: Command `dbt run-operation` failed at 23:12:17.756925 after 1.86 seconds
+[0m23:12:17.758212 [debug] [MainThread]: Connection 'macro_test_source' was properly closed.
+[0m23:12:17.759215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025658D77820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565C6F02E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002565C6F01F0>]}
+[0m23:12:17.760216 [debug] [MainThread]: Flushing usage events
+[0m23:13:17.691344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E68847820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BA1AC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BA1AA10>]}
+
+
+============================== 23:13:17.695896 | b6b4e473-f39d-4fdb-b697-196f5011d853 ==============================
+[0m23:13:17.695896 [info ] [MainThread]: Running with dbt=1.7.0
+[0m23:13:17.698009 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\joshi\\OneDrive\\Desktop\\hit2\\dbt_project\\logs', 'debug': 'True', 'profiles_dir': 'C:\\Users\\joshi\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:13:17.946783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6B991930>]}
+[0m23:13:18.062656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6B992BF0>]}
+[0m23:13:18.065657 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m23:13:18.076860 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m23:13:18.193524 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:13:18.194525 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:13:18.202753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BE851B0>]}
+[0m23:13:18.216470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BE504C0>]}
+[0m23:13:18.217744 [info ] [MainThread]: Found 3 models, 1 test, 3 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m23:13:18.217744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BE503D0>]}
+[0m23:13:18.221684 [info ] [MainThread]: 
+[0m23:13:18.222702 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:13:18.226020 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aus_company_db'
+[0m23:13:18.240516 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db"
+[0m23:13:18.241605 [debug] [ThreadPool]: On list_aus_company_db: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_aus_company_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:13:18.242605 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:13:18.301481 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m23:13:18.304561 [debug] [ThreadPool]: On list_aus_company_db: Close
+[0m23:13:18.307561 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aus_company_db_australian_companies'
+[0m23:13:18.315082 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db_australian_companies"
+[0m23:13:18.316092 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: BEGIN
+[0m23:13:18.317320 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:13:18.367952 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m23:13:18.368952 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db_australian_companies"
+[0m23:13:18.369951 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_aus_company_db_australian_companies"} */
+select
+      'aus_company_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'australian_companies'
+    union all
+    select
+      'aus_company_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'australian_companies'
+    union all
+    select
+      'aus_company_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'australian_companies'
+  
+[0m23:13:18.383383 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m23:13:18.386698 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: ROLLBACK
+[0m23:13:18.386698 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: Close
+[0m23:13:18.394906 [debug] [MainThread]: Using postgres connection "master"
+[0m23:13:18.395915 [debug] [MainThread]: On master: BEGIN
+[0m23:13:18.396916 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:13:18.447607 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:13:18.448752 [debug] [MainThread]: Using postgres connection "master"
+[0m23:13:18.449755 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m23:13:18.462711 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:13:18.464711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BEC6350>]}
+[0m23:13:18.465712 [debug] [MainThread]: On master: ROLLBACK
+[0m23:13:18.467736 [debug] [MainThread]: Using postgres connection "master"
+[0m23:13:18.467736 [debug] [MainThread]: On master: BEGIN
+[0m23:13:18.469129 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:13:18.470130 [debug] [MainThread]: On master: COMMIT
+[0m23:13:18.471138 [debug] [MainThread]: Using postgres connection "master"
+[0m23:13:18.472145 [debug] [MainThread]: On master: COMMIT
+[0m23:13:18.473131 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:13:18.474143 [debug] [MainThread]: On master: Close
+[0m23:13:18.476218 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:13:18.476218 [info ] [MainThread]: 
+[0m23:13:18.481873 [debug] [Thread-1 (]: Began running node model.aus_company_pipeline.stg_abr
+[0m23:13:18.483001 [info ] [Thread-1 (]: 1 of 3 START sql table model australian_companies.stg_abr ...................... [RUN]
+[0m23:13:18.484013 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.aus_company_pipeline.stg_abr'
+[0m23:13:18.485034 [debug] [Thread-1 (]: Began compiling node model.aus_company_pipeline.stg_abr
+[0m23:13:18.495030 [debug] [Thread-1 (]: Writing injected SQL for node "model.aus_company_pipeline.stg_abr"
+[0m23:13:18.499214 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_abr (compile): 23:13:18.486024 => 23:13:18.498214
+[0m23:13:18.500213 [debug] [Thread-1 (]: Began executing node model.aus_company_pipeline.stg_abr
+[0m23:13:18.548490 [debug] [Thread-1 (]: Writing runtime sql for node "model.aus_company_pipeline.stg_abr"
+[0m23:13:18.552491 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:13:18.553493 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: BEGIN
+[0m23:13:18.554491 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:13:18.604757 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:13:18.605756 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:13:18.607245 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_abr"} */
+
+  
+    
+
+  create  table "aus_company_db"."australian_companies"."stg_abr__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT *
+FROM "aus_company_db"."australian_companies"."abr_data"
+  );
+  
+[0m23:13:18.624080 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:13:18.686917 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:13:18.687919 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_abr"} */
+alter table "aus_company_db"."australian_companies"."stg_abr__dbt_tmp" rename to "stg_abr"
+[0m23:13:18.692090 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:13:18.713916 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: COMMIT
+[0m23:13:18.714916 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:13:18.715912 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: COMMIT
+[0m23:13:18.719511 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:13:18.727506 [debug] [Thread-1 (]: Applying DROP to: "aus_company_db"."australian_companies"."stg_abr__dbt_backup"
+[0m23:13:18.734512 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:13:18.735509 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_abr"} */
+drop table if exists "aus_company_db"."australian_companies"."stg_abr__dbt_backup" cascade
+[0m23:13:18.737521 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:13:18.739886 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_abr (execute): 23:13:18.501214 => 23:13:18.739886
+[0m23:13:18.740885 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: Close
+[0m23:13:18.743227 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BEF5450>]}
+[0m23:13:18.745232 [info ] [Thread-1 (]: 1 of 3 OK created sql table model australian_companies.stg_abr ................. [[32mSELECT 0[0m in 0.26s]
+[0m23:13:18.746231 [debug] [Thread-1 (]: Finished running node model.aus_company_pipeline.stg_abr
+[0m23:13:18.747226 [debug] [Thread-1 (]: Began running node model.aus_company_pipeline.stg_websites
+[0m23:13:18.748461 [info ] [Thread-1 (]: 2 of 3 START sql table model australian_companies.stg_websites ................. [RUN]
+[0m23:13:18.749881 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aus_company_pipeline.stg_abr, now model.aus_company_pipeline.stg_websites)
+[0m23:13:18.751893 [debug] [Thread-1 (]: Began compiling node model.aus_company_pipeline.stg_websites
+[0m23:13:18.755894 [debug] [Thread-1 (]: Writing injected SQL for node "model.aus_company_pipeline.stg_websites"
+[0m23:13:18.757892 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_websites (compile): 23:13:18.751893 => 23:13:18.757892
+[0m23:13:18.758914 [debug] [Thread-1 (]: Began executing node model.aus_company_pipeline.stg_websites
+[0m23:13:18.766339 [debug] [Thread-1 (]: Writing runtime sql for node "model.aus_company_pipeline.stg_websites"
+[0m23:13:18.768148 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:13:18.769070 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: BEGIN
+[0m23:13:18.770070 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:13:18.818053 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:13:18.820208 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:13:18.821205 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_websites"} */
+
+  
+    
+
+  create  table "aus_company_db"."australian_companies"."stg_websites__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT *
+FROM "aus_company_db"."australian_companies"."websites"
+  );
+  
+[0m23:13:18.831063 [debug] [Thread-1 (]: SQL status: SELECT 247 in 0.0 seconds
+[0m23:13:18.836269 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:13:18.837269 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_websites"} */
+alter table "aus_company_db"."australian_companies"."stg_websites__dbt_tmp" rename to "stg_websites"
+[0m23:13:18.839737 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:13:18.843242 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: COMMIT
+[0m23:13:18.843242 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:13:18.845245 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: COMMIT
+[0m23:13:18.847245 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:13:18.851251 [debug] [Thread-1 (]: Applying DROP to: "aus_company_db"."australian_companies"."stg_websites__dbt_backup"
+[0m23:13:18.852252 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:13:18.853311 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_websites"} */
+drop table if exists "aus_company_db"."australian_companies"."stg_websites__dbt_backup" cascade
+[0m23:13:18.855351 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:13:18.857768 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_websites (execute): 23:13:18.759911 => 23:13:18.857768
+[0m23:13:18.858769 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: Close
+[0m23:13:18.861029 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BF59720>]}
+[0m23:13:18.862040 [info ] [Thread-1 (]: 2 of 3 OK created sql table model australian_companies.stg_websites ............ [[32mSELECT 247[0m in 0.11s]
+[0m23:13:18.863989 [debug] [Thread-1 (]: Finished running node model.aus_company_pipeline.stg_websites
+[0m23:13:18.865984 [debug] [Thread-1 (]: Began running node model.aus_company_pipeline.website_abr_mapping
+[0m23:13:18.866987 [info ] [Thread-1 (]: 3 of 3 START sql table model australian_companies.website_abr_mapping .......... [RUN]
+[0m23:13:18.867986 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aus_company_pipeline.stg_websites, now model.aus_company_pipeline.website_abr_mapping)
+[0m23:13:18.869036 [debug] [Thread-1 (]: Began compiling node model.aus_company_pipeline.website_abr_mapping
+[0m23:13:18.877397 [debug] [Thread-1 (]: Writing injected SQL for node "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.879399 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.website_abr_mapping (compile): 23:13:18.870034 => 23:13:18.879399
+[0m23:13:18.880828 [debug] [Thread-1 (]: Began executing node model.aus_company_pipeline.website_abr_mapping
+[0m23:13:18.887125 [debug] [Thread-1 (]: Writing runtime sql for node "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.889890 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.890892 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: BEGIN
+[0m23:13:18.891889 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:13:18.941919 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:13:18.944100 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.944100 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+
+  
+    
+
+  create  table "aus_company_db"."australian_companies"."website_abr_mapping__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+SELECT
+    ROW_NUMBER() OVER (ORDER BY w.website_id, a.abn) AS mapping_id,
+    w.website_id,
+    a.abn,
+    CASE WHEN w.company_name = a.company_name THEN 1.0 ELSE 0.8 END AS confidence_score
+FROM "aus_company_db"."australian_companies"."stg_websites" w
+LEFT JOIN "aus_company_db"."australian_companies"."stg_abr" a ON w.company_name = a.company_name
+  );
+  
+[0m23:13:18.957765 [debug] [Thread-1 (]: SQL status: SELECT 247 in 0.0 seconds
+[0m23:13:18.963071 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.964071 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+alter table "aus_company_db"."australian_companies"."website_abr_mapping" rename to "website_abr_mapping__dbt_backup"
+[0m23:13:18.965310 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:13:18.970640 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.971640 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+alter table "aus_company_db"."australian_companies"."website_abr_mapping__dbt_tmp" rename to "website_abr_mapping"
+[0m23:13:18.972640 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:13:18.979049 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: COMMIT
+[0m23:13:18.980051 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.981053 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: COMMIT
+[0m23:13:18.983580 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:13:18.987941 [debug] [Thread-1 (]: Applying DROP to: "aus_company_db"."australian_companies"."website_abr_mapping__dbt_backup"
+[0m23:13:18.989957 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:13:18.991155 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+drop table if exists "aus_company_db"."australian_companies"."website_abr_mapping__dbt_backup" cascade
+[0m23:13:19.000174 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:13:19.002172 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.website_abr_mapping (execute): 23:13:18.882124 => 23:13:19.002172
+[0m23:13:19.003170 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: Close
+[0m23:13:19.005464 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6b4e473-f39d-4fdb-b697-196f5011d853', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BF7F520>]}
+[0m23:13:19.006682 [info ] [Thread-1 (]: 3 of 3 OK created sql table model australian_companies.website_abr_mapping ..... [[32mSELECT 247[0m in 0.14s]
+[0m23:13:19.008913 [debug] [Thread-1 (]: Finished running node model.aus_company_pipeline.website_abr_mapping
+[0m23:13:19.010911 [debug] [MainThread]: Using postgres connection "master"
+[0m23:13:19.012131 [debug] [MainThread]: On master: BEGIN
+[0m23:13:19.013365 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:13:19.174726 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:13:19.175723 [debug] [MainThread]: On master: COMMIT
+[0m23:13:19.176723 [debug] [MainThread]: Using postgres connection "master"
+[0m23:13:19.176723 [debug] [MainThread]: On master: COMMIT
+[0m23:13:19.178983 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:13:19.179984 [debug] [MainThread]: On master: Close
+[0m23:13:19.181196 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:13:19.182222 [debug] [MainThread]: Connection 'list_aus_company_db' was properly closed.
+[0m23:13:19.183372 [debug] [MainThread]: Connection 'list_aus_company_db_australian_companies' was properly closed.
+[0m23:13:19.184614 [debug] [MainThread]: Connection 'model.aus_company_pipeline.website_abr_mapping' was properly closed.
+[0m23:13:19.185674 [info ] [MainThread]: 
+[0m23:13:19.186672 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 0.96 seconds (0.96s).
+[0m23:13:19.188802 [debug] [MainThread]: Command end result
+[0m23:13:19.198994 [info ] [MainThread]: 
+[0m23:13:19.200497 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:13:19.200497 [info ] [MainThread]: 
+[0m23:13:19.203127 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m23:13:19.204383 [debug] [MainThread]: Command `dbt run` succeeded at 23:13:19.204383 after 1.58 seconds
+[0m23:13:19.205382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E68847820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6B992BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BF7F520>]}
+[0m23:13:19.206473 [debug] [MainThread]: Flushing usage events
+[0m23:19:44.484858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCBA7F6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCBD9CAC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCBD9CAA10>]}
+
+
+============================== 23:19:44.491869 | f3d8663d-2a90-4150-b395-7d639136fba4 ==============================
+[0m23:19:44.491869 [info ] [MainThread]: Running with dbt=1.7.0
+[0m23:19:44.492868 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\joshi\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\joshi\\OneDrive\\Desktop\\hit2\\dbt_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:19:44.492868 [info ] [MainThread]: dbt version: 1.7.0
+[0m23:19:44.493880 [info ] [MainThread]: python version: 3.10.16
+[0m23:19:44.494869 [info ] [MainThread]: python path: C:\Users\joshi\AppData\Local\anaconda3\envs\spark_env\python.exe
+[0m23:19:44.494869 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m23:19:44.614776 [info ] [MainThread]: Using profiles dir at C:\Users\joshi\.dbt
+[0m23:19:44.615776 [info ] [MainThread]: Using profiles.yml file at C:\Users\joshi\.dbt\profiles.yml
+[0m23:19:44.616776 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\joshi\OneDrive\Desktop\hit2\dbt_project\dbt_project.yml
+[0m23:19:44.617948 [info ] [MainThread]: adapter type: postgres
+[0m23:19:44.618959 [info ] [MainThread]: adapter version: 1.7.0
+[0m23:19:44.702702 [info ] [MainThread]: Configuration:
+[0m23:19:44.703702 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:19:44.703702 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:19:44.704864 [info ] [MainThread]: Required dependencies:
+[0m23:19:44.705864 [debug] [MainThread]: Executing "git --help"
+[0m23:19:44.766004 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:19:44.767365 [debug] [MainThread]: STDERR: "b''"
+[0m23:19:44.768573 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:19:44.769689 [info ] [MainThread]: Connection:
+[0m23:19:44.770690 [info ] [MainThread]:   host: localhost
+[0m23:19:44.771690 [info ] [MainThread]:   port: 5432
+[0m23:19:44.771690 [info ] [MainThread]:   user: pipeline_user_new
+[0m23:19:44.772690 [info ] [MainThread]:   database: aus_company_db
+[0m23:19:44.773711 [info ] [MainThread]:   schema: australian_companies
+[0m23:19:44.774745 [info ] [MainThread]:   connect_timeout: 10
+[0m23:19:44.774745 [info ] [MainThread]:   role: None
+[0m23:19:44.775742 [info ] [MainThread]:   search_path: None
+[0m23:19:44.776743 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:19:44.777742 [info ] [MainThread]:   sslmode: None
+[0m23:19:44.778742 [info ] [MainThread]:   sslcert: None
+[0m23:19:44.779742 [info ] [MainThread]:   sslkey: None
+[0m23:19:44.779742 [info ] [MainThread]:   sslrootcert: None
+[0m23:19:44.780742 [info ] [MainThread]:   application_name: dbt
+[0m23:19:44.782098 [info ] [MainThread]:   retries: 1
+[0m23:19:44.783094 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m23:19:44.784095 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:19:44.784095 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:19:44.785091 [debug] [MainThread]: On debug: select 1 as id
+[0m23:19:44.786110 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:19:44.835276 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m23:19:44.836278 [debug] [MainThread]: On debug: Close
+[0m23:19:44.837278 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:19:44.838277 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:19:44.840578 [debug] [MainThread]: Command `dbt debug` succeeded at 23:19:44.839278 after 0.42 seconds
+[0m23:19:44.841615 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:19:44.842612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCBA7F6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCBD93FEB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCBDB25960>]}
+[0m23:19:44.843611 [debug] [MainThread]: Flushing usage events
+[0m23:19:49.673264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BC7CEA110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCAEBADA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCAEBAB30>]}
+
+
+============================== 23:19:49.680607 | 2fd3f38b-68f3-4e13-b8ca-87221e6d76b1 ==============================
+[0m23:19:49.680607 [info ] [MainThread]: Running with dbt=1.7.0
+[0m23:19:49.682699 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\joshi\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\joshi\\OneDrive\\Desktop\\hit2\\dbt_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:19:49.951150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCAFD9180>]}
+[0m23:19:50.067176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCAE65C60>]}
+[0m23:19:50.069177 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m23:19:50.080182 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m23:19:50.201457 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:19:50.202457 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:19:50.209499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB3252D0>]}
+[0m23:19:50.223165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB2E71C0>]}
+[0m23:19:50.224165 [info ] [MainThread]: Found 3 models, 1 test, 3 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m23:19:50.225178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB2F4160>]}
+[0m23:19:50.226627 [info ] [MainThread]: 
+[0m23:19:50.229121 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:19:50.232121 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aus_company_db'
+[0m23:19:50.245180 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db"
+[0m23:19:50.246181 [debug] [ThreadPool]: On list_aus_company_db: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_aus_company_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:19:50.247184 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:19:50.407943 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m23:19:50.409943 [debug] [ThreadPool]: On list_aus_company_db: Close
+[0m23:19:50.411943 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aus_company_db_australian_companies'
+[0m23:19:50.419968 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db_australian_companies"
+[0m23:19:50.420967 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: BEGIN
+[0m23:19:50.422392 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:19:50.470030 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:50.471030 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db_australian_companies"
+[0m23:19:50.471030 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_aus_company_db_australian_companies"} */
+select
+      'aus_company_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'australian_companies'
+    union all
+    select
+      'aus_company_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'australian_companies'
+    union all
+    select
+      'aus_company_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'australian_companies'
+  
+[0m23:19:50.482447 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m23:19:50.484908 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: ROLLBACK
+[0m23:19:50.485906 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: Close
+[0m23:19:50.494722 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:50.495721 [debug] [MainThread]: On master: BEGIN
+[0m23:19:50.495721 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:19:50.546795 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:50.548204 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:50.549512 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m23:19:50.560903 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:19:50.562938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB3625C0>]}
+[0m23:19:50.564331 [debug] [MainThread]: On master: ROLLBACK
+[0m23:19:50.564872 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:50.566205 [debug] [MainThread]: On master: BEGIN
+[0m23:19:50.568204 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:50.568204 [debug] [MainThread]: On master: COMMIT
+[0m23:19:50.570204 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:50.570204 [debug] [MainThread]: On master: COMMIT
+[0m23:19:50.571226 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:19:50.572207 [debug] [MainThread]: On master: Close
+[0m23:19:50.574209 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:19:50.575206 [info ] [MainThread]: 
+[0m23:19:50.581597 [debug] [Thread-1 (]: Began running node model.aus_company_pipeline.stg_abr
+[0m23:19:50.582975 [info ] [Thread-1 (]: 1 of 3 START sql table model australian_companies.stg_abr ...................... [RUN]
+[0m23:19:50.583989 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.aus_company_pipeline.stg_abr'
+[0m23:19:50.584991 [debug] [Thread-1 (]: Began compiling node model.aus_company_pipeline.stg_abr
+[0m23:19:50.596584 [debug] [Thread-1 (]: Writing injected SQL for node "model.aus_company_pipeline.stg_abr"
+[0m23:19:50.598097 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_abr (compile): 23:19:50.585992 => 23:19:50.597090
+[0m23:19:50.599100 [debug] [Thread-1 (]: Began executing node model.aus_company_pipeline.stg_abr
+[0m23:19:50.652599 [debug] [Thread-1 (]: Writing runtime sql for node "model.aus_company_pipeline.stg_abr"
+[0m23:19:50.653699 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:19:50.655905 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: BEGIN
+[0m23:19:50.656904 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:19:50.710068 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:50.711080 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:19:50.711080 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_abr"} */
+
+  
+    
+
+  create  table "aus_company_db"."australian_companies"."stg_abr__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT *
+FROM "aus_company_db"."australian_companies"."abr_data"
+  );
+  
+[0m23:19:50.723224 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:19:50.794237 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:19:50.795238 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_abr"} */
+alter table "aus_company_db"."australian_companies"."stg_abr__dbt_tmp" rename to "stg_abr"
+[0m23:19:50.797236 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:19:50.819914 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: COMMIT
+[0m23:19:50.820911 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:19:50.822292 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: COMMIT
+[0m23:19:50.824619 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:19:50.834105 [debug] [Thread-1 (]: Applying DROP to: "aus_company_db"."australian_companies"."stg_abr__dbt_backup"
+[0m23:19:50.840623 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_abr"
+[0m23:19:50.841639 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_abr"} */
+drop table if exists "aus_company_db"."australian_companies"."stg_abr__dbt_backup" cascade
+[0m23:19:50.842635 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:19:50.847114 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_abr (execute): 23:19:50.600099 => 23:19:50.845941
+[0m23:19:50.847114 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_abr: Close
+[0m23:19:50.849115 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB3940A0>]}
+[0m23:19:50.851118 [info ] [Thread-1 (]: 1 of 3 OK created sql table model australian_companies.stg_abr ................. [[32mSELECT 0[0m in 0.27s]
+[0m23:19:50.852118 [debug] [Thread-1 (]: Finished running node model.aus_company_pipeline.stg_abr
+[0m23:19:50.853555 [debug] [Thread-1 (]: Began running node model.aus_company_pipeline.stg_websites
+[0m23:19:50.854733 [info ] [Thread-1 (]: 2 of 3 START sql table model australian_companies.stg_websites ................. [RUN]
+[0m23:19:50.856140 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aus_company_pipeline.stg_abr, now model.aus_company_pipeline.stg_websites)
+[0m23:19:50.857296 [debug] [Thread-1 (]: Began compiling node model.aus_company_pipeline.stg_websites
+[0m23:19:50.861496 [debug] [Thread-1 (]: Writing injected SQL for node "model.aus_company_pipeline.stg_websites"
+[0m23:19:50.862899 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_websites (compile): 23:19:50.857296 => 23:19:50.862899
+[0m23:19:50.863900 [debug] [Thread-1 (]: Began executing node model.aus_company_pipeline.stg_websites
+[0m23:19:50.870761 [debug] [Thread-1 (]: Writing runtime sql for node "model.aus_company_pipeline.stg_websites"
+[0m23:19:50.871762 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:19:50.873762 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: BEGIN
+[0m23:19:50.873762 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:19:50.938023 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:50.938023 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:19:50.939023 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_websites"} */
+
+  
+    
+
+  create  table "aus_company_db"."australian_companies"."stg_websites__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT *
+FROM "aus_company_db"."australian_companies"."websites"
+  );
+  
+[0m23:19:50.950031 [debug] [Thread-1 (]: SQL status: SELECT 247 in 0.0 seconds
+[0m23:19:50.954032 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:19:50.955032 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_websites"} */
+alter table "aus_company_db"."australian_companies"."stg_websites__dbt_tmp" rename to "stg_websites"
+[0m23:19:50.957035 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:19:50.960034 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: COMMIT
+[0m23:19:50.961037 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:19:50.962037 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: COMMIT
+[0m23:19:50.964036 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:19:50.968175 [debug] [Thread-1 (]: Applying DROP to: "aus_company_db"."australian_companies"."stg_websites__dbt_backup"
+[0m23:19:50.970175 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.stg_websites"
+[0m23:19:50.971175 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.stg_websites"} */
+drop table if exists "aus_company_db"."australian_companies"."stg_websites__dbt_backup" cascade
+[0m23:19:50.972174 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:19:50.974175 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.stg_websites (execute): 23:19:50.865227 => 23:19:50.974175
+[0m23:19:50.975176 [debug] [Thread-1 (]: On model.aus_company_pipeline.stg_websites: Close
+[0m23:19:50.977524 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB3F57B0>]}
+[0m23:19:50.978523 [info ] [Thread-1 (]: 2 of 3 OK created sql table model australian_companies.stg_websites ............ [[32mSELECT 247[0m in 0.12s]
+[0m23:19:50.980807 [debug] [Thread-1 (]: Finished running node model.aus_company_pipeline.stg_websites
+[0m23:19:50.981807 [debug] [Thread-1 (]: Began running node model.aus_company_pipeline.website_abr_mapping
+[0m23:19:50.982808 [info ] [Thread-1 (]: 3 of 3 START sql table model australian_companies.website_abr_mapping .......... [RUN]
+[0m23:19:50.984810 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aus_company_pipeline.stg_websites, now model.aus_company_pipeline.website_abr_mapping)
+[0m23:19:50.985809 [debug] [Thread-1 (]: Began compiling node model.aus_company_pipeline.website_abr_mapping
+[0m23:19:50.992246 [debug] [Thread-1 (]: Writing injected SQL for node "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:50.993246 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.website_abr_mapping (compile): 23:19:50.986823 => 23:19:50.993246
+[0m23:19:50.994248 [debug] [Thread-1 (]: Began executing node model.aus_company_pipeline.website_abr_mapping
+[0m23:19:51.000929 [debug] [Thread-1 (]: Writing runtime sql for node "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:51.002945 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:51.003988 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: BEGIN
+[0m23:19:51.004948 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:19:51.054925 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:51.055925 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:51.056925 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+
+  
+    
+
+  create  table "aus_company_db"."australian_companies"."website_abr_mapping__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+SELECT
+    ROW_NUMBER() OVER (ORDER BY w.website_id, a.abn) AS mapping_id,
+    w.website_id,
+    a.abn,
+    CASE WHEN w.company_name = a.company_name THEN 1.0 ELSE 0.8 END AS confidence_score
+FROM "aus_company_db"."australian_companies"."stg_websites" w
+LEFT JOIN "aus_company_db"."australian_companies"."stg_abr" a ON w.company_name = a.company_name
+  );
+  
+[0m23:19:51.070120 [debug] [Thread-1 (]: SQL status: SELECT 247 in 0.0 seconds
+[0m23:19:51.075132 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:51.076117 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+alter table "aus_company_db"."australian_companies"."website_abr_mapping" rename to "website_abr_mapping__dbt_backup"
+[0m23:19:51.078118 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:19:51.082119 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:51.083117 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+alter table "aus_company_db"."australian_companies"."website_abr_mapping__dbt_tmp" rename to "website_abr_mapping"
+[0m23:19:51.084117 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:19:51.090523 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: COMMIT
+[0m23:19:51.091523 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:51.092526 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: COMMIT
+[0m23:19:51.094770 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:19:51.098781 [debug] [Thread-1 (]: Applying DROP to: "aus_company_db"."australian_companies"."website_abr_mapping__dbt_backup"
+[0m23:19:51.099782 [debug] [Thread-1 (]: Using postgres connection "model.aus_company_pipeline.website_abr_mapping"
+[0m23:19:51.100781 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "model.aus_company_pipeline.website_abr_mapping"} */
+drop table if exists "aus_company_db"."australian_companies"."website_abr_mapping__dbt_backup" cascade
+[0m23:19:51.108953 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:19:51.110951 [debug] [Thread-1 (]: Timing info for model.aus_company_pipeline.website_abr_mapping (execute): 23:19:50.995247 => 23:19:51.110951
+[0m23:19:51.111951 [debug] [Thread-1 (]: On model.aus_company_pipeline.website_abr_mapping: Close
+[0m23:19:51.112964 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fd3f38b-68f3-4e13-b8ca-87221e6d76b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB3F7F70>]}
+[0m23:19:51.114953 [info ] [Thread-1 (]: 3 of 3 OK created sql table model australian_companies.website_abr_mapping ..... [[32mSELECT 247[0m in 0.13s]
+[0m23:19:51.115953 [debug] [Thread-1 (]: Finished running node model.aus_company_pipeline.website_abr_mapping
+[0m23:19:51.117955 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:51.118954 [debug] [MainThread]: On master: BEGIN
+[0m23:19:51.119956 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:19:51.168929 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:51.169958 [debug] [MainThread]: On master: COMMIT
+[0m23:19:51.170975 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:51.170975 [debug] [MainThread]: On master: COMMIT
+[0m23:19:51.172457 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:19:51.173443 [debug] [MainThread]: On master: Close
+[0m23:19:51.175444 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:19:51.175444 [debug] [MainThread]: Connection 'list_aus_company_db' was properly closed.
+[0m23:19:51.176449 [debug] [MainThread]: Connection 'list_aus_company_db_australian_companies' was properly closed.
+[0m23:19:51.177449 [debug] [MainThread]: Connection 'model.aus_company_pipeline.website_abr_mapping' was properly closed.
+[0m23:19:51.178475 [info ] [MainThread]: 
+[0m23:19:51.179446 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 0.95 seconds (0.95s).
+[0m23:19:51.181446 [debug] [MainThread]: Command end result
+[0m23:19:51.192877 [info ] [MainThread]: 
+[0m23:19:51.193877 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:19:51.194878 [info ] [MainThread]: 
+[0m23:19:51.195883 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m23:19:51.196881 [debug] [MainThread]: Command `dbt run` succeeded at 23:19:51.196881 after 1.60 seconds
+[0m23:19:51.198273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BC7CEA110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCB2F4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017BCAEBB4C0>]}
+[0m23:19:51.199305 [debug] [MainThread]: Flushing usage events
+[0m23:19:56.045294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186599E6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CBB6DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CBB6B30>]}
+
+
+============================== 23:19:56.050924 | 1835e180-e2ce-4093-9d35-ecdbe14ba13f ==============================
+[0m23:19:56.050924 [info ] [MainThread]: Running with dbt=1.7.0
+[0m23:19:56.051923 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\joshi\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\joshi\\OneDrive\\Desktop\\hit2\\dbt_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:19:56.303352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1835e180-e2ce-4093-9d35-ecdbe14ba13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CCD9180>]}
+[0m23:19:56.422921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1835e180-e2ce-4093-9d35-ecdbe14ba13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CB71C60>]}
+[0m23:19:56.425429 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m23:19:56.438922 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m23:19:56.536754 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:19:56.537756 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:19:56.544431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1835e180-e2ce-4093-9d35-ecdbe14ba13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865D0252D0>]}
+[0m23:19:56.557094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1835e180-e2ce-4093-9d35-ecdbe14ba13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CFE71C0>]}
+[0m23:19:56.558095 [info ] [MainThread]: Found 3 models, 1 test, 3 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m23:19:56.559102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1835e180-e2ce-4093-9d35-ecdbe14ba13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CFF8160>]}
+[0m23:19:56.561092 [info ] [MainThread]: 
+[0m23:19:56.563093 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:19:56.567095 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aus_company_db_australian_companies'
+[0m23:19:56.580096 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db_australian_companies"
+[0m23:19:56.581092 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: BEGIN
+[0m23:19:56.582096 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:19:56.742542 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:56.743721 [debug] [ThreadPool]: Using postgres connection "list_aus_company_db_australian_companies"
+[0m23:19:56.743721 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_aus_company_db_australian_companies"} */
+select
+      'aus_company_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'australian_companies'
+    union all
+    select
+      'aus_company_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'australian_companies'
+    union all
+    select
+      'aus_company_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'australian_companies'
+  
+[0m23:19:56.751733 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m23:19:56.753730 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: ROLLBACK
+[0m23:19:56.753730 [debug] [ThreadPool]: On list_aus_company_db_australian_companies: Close
+[0m23:19:56.761089 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:56.762091 [debug] [MainThread]: On master: BEGIN
+[0m23:19:56.763091 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:19:56.808956 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:56.809956 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:56.810958 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m23:19:56.819509 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:19:56.821510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1835e180-e2ce-4093-9d35-ecdbe14ba13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CFE63E0>]}
+[0m23:19:56.822509 [debug] [MainThread]: On master: ROLLBACK
+[0m23:19:56.823510 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:56.824597 [debug] [MainThread]: On master: BEGIN
+[0m23:19:56.824597 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:56.825607 [debug] [MainThread]: On master: COMMIT
+[0m23:19:56.825607 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:56.827100 [debug] [MainThread]: On master: COMMIT
+[0m23:19:56.828101 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:19:56.829100 [debug] [MainThread]: On master: Close
+[0m23:19:56.830100 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:19:56.831099 [info ] [MainThread]: 
+[0m23:19:56.834104 [debug] [Thread-1 (]: Began running node test.aus_company_pipeline.unique_abn
+[0m23:19:56.835307 [info ] [Thread-1 (]: 1 of 1 START test unique_abn ................................................... [RUN]
+[0m23:19:56.836317 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.aus_company_pipeline.unique_abn'
+[0m23:19:56.837363 [debug] [Thread-1 (]: Began compiling node test.aus_company_pipeline.unique_abn
+[0m23:19:56.847320 [debug] [Thread-1 (]: Writing injected SQL for node "test.aus_company_pipeline.unique_abn"
+[0m23:19:56.852321 [debug] [Thread-1 (]: Timing info for test.aus_company_pipeline.unique_abn (compile): 23:19:56.838360 => 23:19:56.852321
+[0m23:19:56.853328 [debug] [Thread-1 (]: Began executing node test.aus_company_pipeline.unique_abn
+[0m23:19:56.872966 [debug] [Thread-1 (]: Writing runtime sql for node "test.aus_company_pipeline.unique_abn"
+[0m23:19:56.873965 [debug] [Thread-1 (]: Using postgres connection "test.aus_company_pipeline.unique_abn"
+[0m23:19:56.875465 [debug] [Thread-1 (]: On test.aus_company_pipeline.unique_abn: BEGIN
+[0m23:19:56.876548 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:19:56.939216 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:56.940216 [debug] [Thread-1 (]: Using postgres connection "test.aus_company_pipeline.unique_abn"
+[0m23:19:56.941216 [debug] [Thread-1 (]: On test.aus_company_pipeline.unique_abn: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "default", "target_name": "dev", "node_id": "test.aus_company_pipeline.unique_abn"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT abn
+        FROM "aus_company_db"."australian_companies"."stg_abr"
+        GROUP BY abn
+        HAVING COUNT(*) > 1
+      
+    ) dbt_internal_test
+[0m23:19:56.946217 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m23:19:56.949217 [debug] [Thread-1 (]: Timing info for test.aus_company_pipeline.unique_abn (execute): 23:19:56.854320 => 23:19:56.949217
+[0m23:19:56.950220 [debug] [Thread-1 (]: On test.aus_company_pipeline.unique_abn: ROLLBACK
+[0m23:19:56.951426 [debug] [Thread-1 (]: On test.aus_company_pipeline.unique_abn: Close
+[0m23:19:56.953860 [info ] [Thread-1 (]: 1 of 1 PASS unique_abn ......................................................... [[32mPASS[0m in 0.12s]
+[0m23:19:56.955858 [debug] [Thread-1 (]: Finished running node test.aus_company_pipeline.unique_abn
+[0m23:19:56.958858 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:56.959885 [debug] [MainThread]: On master: BEGIN
+[0m23:19:56.960859 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:19:57.010493 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:19:57.011492 [debug] [MainThread]: On master: COMMIT
+[0m23:19:57.012496 [debug] [MainThread]: Using postgres connection "master"
+[0m23:19:57.013495 [debug] [MainThread]: On master: COMMIT
+[0m23:19:57.014495 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:19:57.015520 [debug] [MainThread]: On master: Close
+[0m23:19:57.016825 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:19:57.016825 [debug] [MainThread]: Connection 'list_aus_company_db_australian_companies' was properly closed.
+[0m23:19:57.018239 [debug] [MainThread]: Connection 'test.aus_company_pipeline.unique_abn' was properly closed.
+[0m23:19:57.019249 [info ] [MainThread]: 
+[0m23:19:57.020345 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 0.46 seconds (0.46s).
+[0m23:19:57.020345 [debug] [MainThread]: Command end result
+[0m23:19:57.031962 [info ] [MainThread]: 
+[0m23:19:57.032963 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:19:57.033992 [info ] [MainThread]: 
+[0m23:19:57.035273 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m23:19:57.036289 [debug] [MainThread]: Command `dbt test` succeeded at 23:19:57.036289 after 1.06 seconds
+[0m23:19:57.037284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186599E6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CB2EF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865CBB74C0>]}
+[0m23:19:57.038293 [debug] [MainThread]: Flushing usage events
