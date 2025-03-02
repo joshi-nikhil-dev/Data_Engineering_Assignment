@@ -70,7 +70,7 @@ PostgreSQL 12+ (running locally on localhost:5432)
 Apache Spark 3.5.0 (download from spark.apache.org and extract to C:/Users/joshi/spark/spark-3.5.0-bin-hadoop3)
 Git (for cloning the repository)
 
-Environment Setup
+###Environment Setup
 
 cd australian-company-data-pipeline
 Create a Virtual Environment:
